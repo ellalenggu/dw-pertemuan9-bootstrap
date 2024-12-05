@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDN jQuery</title>
+</head>
+<body>
+   
+    <button id="viewTEXT">Tampilkan Text</button>
+    <button id="hideTEXT">Sembunyikan Text</button>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam doloremque dicta ea libero porro nemo culpa recusandae ex, quis sint quam assumenda illum cum dolor provident ad a optio? Nisi magni inventore sequi corporis eveniet quis perspiciatis, perferendis commodi possimus neque asperiores velit natus excepturi atque eius dolor repellat sunt? Ullam porro eaque, minus atque voluptatum molestiae culpa vitae! Quibusdam maiores, fuga harum sequi rem amet laborum, itaque dolore possimus sapiente obcaecati sunt repellat optio ratione tenetur similique! Corrupti suscipit quisquam ab iure minima at fugiat! Id nostrum recusandae quidem, alias optio veritatis dolorum sequi sit qui dicta dolorem omnis? Accusantium nam enim quam rem ullam quidem amet nemo, fuga deserunt ab, nesciunt veniam, obcaecati iste minima cupiditate dolorum earum in natus molestias? Excepturi est provident minus accusamus voluptatibus quas consequatur repellendus maxime rem praesentium qui illo, omnis tempore magnam saepe officia repellat aspernatur explicabo maiores expedita, deleniti a! Suscipit assumenda ipsum inventore nulla, minima repellendus nisi doloribus soluta aut ullam facere perferendis dicta deleniti. Aperiam laborum laboriosam veritatis fugit, ea temporibus. Temporibus corporis nisi nesciunt! A nam possimus nihil, quisquam animi recusandae temporibus fugiat corrupti, labore nemo velit ipsa earum ratione libero aliquam, fugit id consequuntur? Dicta minus dignissimos nostrum iusto, quidem consequuntur nam perferendis corporis eius debitis earum hic, facere eveniet fugit officiis recusandae culpa qui maxime ut quis molestias alias inventore nobis? Officia doloribus sint nisi aperiam unde ut nostrum neque. Tenetur et, corporis incidunt recusandae culpa numquam, alias sapiente quibusdam provident ullam suscipit, beatae earum autem. Nemo unde facere asperiores maxime quasi, corrupti, deserunt soluta nobis minus, saepe esse rerum? Et architecto tempora ut perspiciatis non iusto accusamus cupiditate officia, eos veniam esse inventore sunt odit iure sequi ipsam unde aut excepturi vel nihil velit! Qui optio obcaecati nemo. Nostrum non possimus harum dicta minus voluptatum.</p>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+           $('p').hide()
+           $('#hideTEXT').hide()
+           $('#viewTEXT').on('click',function(){
+            $('p').show(800)
+            $(this).hide()
+            $('#hideTEXT').show()
+           })
+        } )
+        $(function(){
+            $('#hideTEXT').on('click', function(){
+                $('p').hide()
+                $(this).hide()
+                $('#viewTEXT').show()
+            })
+        })
+        
+    </script>
+</body>
+</html>
